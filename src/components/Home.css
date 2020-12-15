@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.home h1 {
+    margin-bottom: 0px;
+    font-size: 80px;
+    font-family: 'Amatic SC', cursive;
+    color: #fff
+}
