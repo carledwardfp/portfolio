@@ -6,7 +6,7 @@ import './Navbar.css'
 function Navbar() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-    const closeMenu = () => setClick(!click);
+    const closeMenu = () => setClick(false);
     return (
         <nav className="navbar">
             <h1 className="navbar-logo"><span className="spanwhite">CARL</span>EDWARD</h1>
