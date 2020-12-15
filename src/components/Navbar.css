@@ -112,7 +112,7 @@ button:focus {
         height: 100vh;
         position: absolute;
         top: 60px;
-        right: -100%;
+        left: -100%;
         opacity: 100%;
         transition: all 0.5s ease;
         z-index: 2;
@@ -120,7 +120,7 @@ button:focus {
 
     .nav-menu.active {
         background: #202020cc;
-        right: 0;
+        left: 0;
         transition: all 0.5s ease;
         z-index: 1;
     }
