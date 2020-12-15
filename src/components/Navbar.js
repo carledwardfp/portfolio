@@ -7,20 +7,13 @@ class Navbar extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            clicked: false,
-            click: false
+            clicked: false
         }
         this.handleClick = this.handleClick.bind(this)
-        this.closeMenu = this.closeMenu.bind(this)
     }
     handleClick() {
         this.setState({
             clicked: !this.state.clicked
-        })
-    }
-    closeMenu() {
-        this.setState({
-            click: this.state.click
         })
     }
 
@@ -35,7 +28,7 @@ class Navbar extends React.Component {
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <Link className={item.class} to={item.url} onClick={this.closeMenu}>
+                                <Link className={item.class} to={item.url}>
                                     {item.title}
                                 </Link>
                             </li>
