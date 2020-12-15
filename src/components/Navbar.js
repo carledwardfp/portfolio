@@ -42,7 +42,7 @@ class Navbar extends React.Component {
                         )
                     })}
                 </ul>
-                <a href='/portfolio/contact'><button className='btn'>Contact Me</button></a>
+                <a href='/contact'><button className='btn'>Contact Me</button></a>
             </nav>
         )
     }
