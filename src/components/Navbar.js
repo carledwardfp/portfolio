@@ -1,18 +1,26 @@
 import React from 'react'
 import MenuItems from './MenuItems'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 class Navbar extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            clicked: false
+            clicked: false,
+            click: false
         }
         this.handleClick = this.handleClick.bind(this)
+        this.closeMenu = this.closeMenu.bind(this)
     }
     handleClick() {
         this.setState({
             clicked: !this.state.clicked
+        })
+    }
+    closeMenu() {
+        this.setState({
+            click: this.state.click
         })
     }
 
@@ -27,9 +35,9 @@ class Navbar extends React.Component {
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.class} href={item.url}>
+                                <Link className={item.class} to={item.url} onClick={this.closeMenu}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}

@@ -1,27 +1,27 @@
 const MenuItems =  [
     {
         title:'Home',
-        url: '/portfolio/',
+        url: '/',
         class: 'nav-links'
     },
     {
         title:'About',
-        url: '/portfolio/about',
+        url: '/about',
         class: 'nav-links'
     },
     {
         title:'Services',
-        url: '/portfolio/services',
+        url: '/services',
         class: 'nav-links'
     },
     {
         title:'Projects',
-        url: '/portfolio/projects',
+        url: '/projects',
         class: 'nav-links'
     },
     {
         title:'Contact Me',
-        url: '/portfolio/contact',
+        url: '/contact',
         class: 'nav-links-contact'
     }
 ]
