@@ -138,7 +138,7 @@ button:focus {
         top: 0;
         left: 0;
         transform: translate(20%, 30%);
-    }
+        }
 
     .fa-times {
         margin-right: 4px;
