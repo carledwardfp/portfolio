@@ -52,11 +52,6 @@ button:focus {
     justify-content: center;
 }
 
-.active {
-    display: flex;
-    flex-direction: column;
-}
-
 .nav-links {
     color: #fff;
     text-transform: uppercase;
