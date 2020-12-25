@@ -11,17 +11,23 @@
 .navbar {
     background: #202020;
     color: whitesmoke;
-    height: 60px;
+    height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 0 17%;
+    box-shadow: 1px 1px 5px 1px rgba(20,20,20,0.5);
 }
 
 .navbar-logo {
     font-family: 'Anton', sans-serif;
     color: #00ccff;
     font-size: 25px;
-    justify-self: start;
     cursor: pointer;
 }
 
@@ -45,9 +51,7 @@ button:focus {
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 20px;
     text-align: center;
-    width: 70vw;
     justify-content: center;
 }
 
@@ -55,6 +59,8 @@ button:focus {
     color: #fff;
     text-transform: uppercase;
     padding: 10px 15px;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 .nav-links:hover {
@@ -63,27 +69,53 @@ button:focus {
 }
 
 .nav-links-contact {
-    display: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-left: 35px;
+    background-color: #4fc3f7;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.nav-links-contact:hover {
+    background-color: #0093c4;
 }
 
 .btn {
-    color: #fff;
-    text-transform: uppercase;
-    padding: 6px 10px;
-    background-color: #00ccffcc;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 15px;
-    border: 1px;
+    background-color: transparent;
+    border: none;
+    margin-left: 30px;
 }
 
-.btn:hover {
-    background-color: #00ccff
+.div-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-link span {
+    display: none;
+}
+
+@media screen and (max-width:1440px){
+    .navbar {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width: 960px) {
     .navbar {
-        position: relative;
+        height: 60px;
+        position: sticky;
     }
     
     .nav-menu {
@@ -161,4 +193,13 @@ button:focus {
     .btn {
         display: none;
     }
+
+    .div-link {
+        flex-direction: column;
+    }
+
+    .div-link span {
+        display: block;
+    }
+    
 }

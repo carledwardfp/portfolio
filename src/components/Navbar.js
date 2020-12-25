@@ -19,13 +19,14 @@ function Navbar() {
                     return (
                         <li key={index}>
                             <Link className={item.class} to={item.url} onClick={closeMenu}>
-                                {item.title}
+                                <div className='div-link'>
+                                    <span>{item.icon}</span> {item.title}
+                                </div>
                             </Link>
                         </li>
                     )
                 })}
             </ul>
-            <Link to='/contact' onClick={closeMenu}><button className='btn'>Contact Me</button></Link>
         </nav>
     )
 }

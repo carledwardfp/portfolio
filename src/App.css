@@ -1,9 +1,10 @@
-.container {
-    background: url('https://i.imgur.com/hfSbnLO.jpg');
+body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
-    overflow: hidden;
+}
+
+.container {
+    
 }
