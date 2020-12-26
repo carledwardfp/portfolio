@@ -107,6 +107,7 @@ function About() {
                             <img src={process.env.PUBLIC_URL+'/images/html.png'} alt='html' />
                             <img src={process.env.PUBLIC_URL+'/images/css.png'} alt='css' />
                             <img src={process.env.PUBLIC_URL+'/images/js.png'} alt='javascript' />
+                            <img className='react' src={process.env.PUBLIC_URL+'/images/react.png'} alt='reactjs' />
                         </motion.div>
                         
                         <p>I am knowledgable in ReactJS and I use it as my Javascript Framework. I also have basic knowledge of Bootstrap and JQuery</p>
@@ -117,22 +118,27 @@ function About() {
                             variants={skillsTransition}
                             transition={{duration: 1, stiffness: 1000, delay: 1}}
                         >
-                            <img className='react' src={process.env.PUBLIC_URL+'/images/react.png'} alt='reactjs' />
                             <img src={process.env.PUBLIC_URL+'/images/bootstrap.png'} alt='bootstrap' />
                             <img src={process.env.PUBLIC_URL+'/images/jquery.png'} alt='jquery' />
+                            <img src={process.env.PUBLIC_URL+'/images/npm.jpg'} alt='npm' />
+                            <img src={process.env.PUBLIC_URL+'/images/github.png'} alt='git/github' />
                         </motion.div>
 
                         <p>I use NPM as my Javascript package manager and Git/Github for version control and source code management</p>
+                        
+
                         <motion.div className='coding-language'
                             exit='out'
                             animate='in'
                             initial='out'
                             variants={skillsTransition}
-                            transition={{duration: 1, stiffness: 1000, delay: 1.5}}
+                            transition={{duration: 1, stiffness: 1000, delay: 0.5}}
                         >
-                            <img src={process.env.PUBLIC_URL+'/images/npm.jpg'} alt='npm' />
-                            <img src={process.env.PUBLIC_URL+'/images/github.png'} alt='git/github' />
+                            <img src={process.env.PUBLIC_URL+'/images/python.png'} alt='python' />
+                            <img src={process.env.PUBLIC_URL+'/images/cpp.png'} alt='cpp' />
                         </motion.div>
+                        
+                        <p>I have basic knowledge on <em>Back End Web Development</em> specifically Python and C++</p>
 
                         <motion.div className='resume'
                             exit='out'
@@ -145,6 +151,7 @@ function About() {
                                 DOWNLOAD RESUME
                             </button></a>
                         </motion.div>
+
                     </motion.div>
                 </div>
             </div>
