@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '@material-ui/core'
 import { motion } from 'framer-motion'
 import './About.css'
 
@@ -60,7 +59,8 @@ function About() {
                         variants={pageTransition}
                         transition={{duration: 1, stiffness: 1000}}
                     >
-                        <div className='about-header-img' />
+                        <div className='about-header-img' style={{
+        'backgroundImage': `url(${process.env.PUBLIC_URL}/images/mypic.jpg`}}/>
                         <div className='about-info'>
                             <ul className='about-info-ul'>
                                 <li className='about-info-li'>
@@ -109,7 +109,7 @@ function About() {
                             <img src={process.env.PUBLIC_URL+'/images/js.png'} alt='javascript' />
                         </motion.div>
                         
-                        <p>I am knowledgable in ReactJS and I use it as my Javascript Framework. I am also knowledgable in Bootstrap and JQuery</p>
+                        <p>I am knowledgable in ReactJS and I use it as my Javascript Framework. I also have basic knowledge of Bootstrap and JQuery</p>
                         <motion.div className='coding-language'
                             exit='out'
                             animate='in'
@@ -141,7 +141,7 @@ function About() {
                             variants={resumeTransition}
                             transition={{duration: 1, stiffness: 1000, delay: 1.5}}
                         >
-                            <a href='https://drive.google.com/drive/folders/1iViiQamXqOBW5zQU4k_46A87j11BAuSc?usp=sharing' target='_blank'><button>
+                            <a href='https://drive.google.com/drive/folders/1iViiQamXqOBW5zQU4k_46A87j11BAuSc?usp=sharing' target='_blank' rel="noreferrer"><button>
                                 DOWNLOAD RESUME
                             </button></a>
                         </motion.div>
