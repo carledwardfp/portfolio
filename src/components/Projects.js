@@ -39,7 +39,7 @@ function Projects() {
                         </motion.div>
                     </a>
 
-                    <a href='https://official-carledwardfp.github.io/practice-project-todo/' target='_blank' rel="noreferrer">
+                    <a href='https://official-carledwardfp.github.io/practice-project-stockm/' target='_blank' rel="noreferrer">
                         <motion.div className='project'
                             exit='out'
                             animate='in'
