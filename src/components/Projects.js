@@ -60,6 +60,28 @@ function Projects() {
                             </div>
                         </motion.div>
                     </a>
+
+                    <a href='https://official-carledwardfp.github.io/practice-project-weatherapp/' target='_blank' rel="noreferrer">
+                        <motion.div className='project'
+                            exit='out'
+                            animate='in'
+                            initial='out'
+                            variants={transition}
+                            transition={{duration: .5, stiffness: 1000, delay: 0.5}}
+                        >
+                            <img src={process.env.PUBLIC_URL+'/images/practice-project-weather.png'} alt='weatherapp'/>
+                            <div className='project-text'>
+                                <h1>Weather App</h1>
+                                <h2>&lt;Practice Project&gt;</h2>
+                            </div>
+                            <p>Made with:</p>
+                            <div className='languages'>
+                                <img src={process.env.PUBLIC_URL+'/images/react.png'}  alt='react'/>
+                                <img src={process.env.PUBLIC_URL+'/images/axios.png'}  alt='axios'/>
+                            </div>
+                        </motion.div>
+                    </a>
+
                 </div>
             </div>
         </div>
