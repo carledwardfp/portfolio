@@ -110,7 +110,7 @@ function About() {
                             <img className='react' src={process.env.PUBLIC_URL+'/images/react.png'} alt='reactjs' />
                         </motion.div>
                         
-                        <p>I am knowledgable in ReactJS and I use it as my Javascript Framework. I also have basic knowledge of Bootstrap and JQuery</p>
+                        <p>I am knowledgable in ReactJS and I use it primarily for JS. I also have basic knowledge of Bootstrap and JQuery</p>
                         <motion.div className='coding-language'
                             exit='out'
                             animate='in'
@@ -132,20 +132,22 @@ function About() {
                             animate='in'
                             initial='out'
                             variants={skillsTransition}
-                            transition={{duration: 1, stiffness: 1000, delay: 0.5}}
+                            transition={{duration: 1, stiffness: 1000, delay: 1.5}}
                         >
                             <img src={process.env.PUBLIC_URL+'/images/python.png'} alt='python' />
                             <img src={process.env.PUBLIC_URL+'/images/cpp.png'} alt='cpp' />
+                            <img src={process.env.PUBLIC_URL+'/images/mysql.png'} alt='mysql' />
+                            <img src={process.env.PUBLIC_URL+'/images/java.png'} alt='java' />
                         </motion.div>
                         
-                        <p>I have basic knowledge on <em>Back End Web Development</em> specifically Python and C++</p>
+                        <p>I have basic knowledge on <em>Back End Web Development</em> specifically Python and C++. I am currently learning Java and MySQL.</p>
 
                         <motion.div className='resume'
                             exit='out'
                             animate='in'
                             initial='out'
                             variants={resumeTransition}
-                            transition={{duration: 1, stiffness: 1000, delay: 1.5}}
+                            transition={{duration: 1, stiffness: 1000, delay: 2}}
                         >
                             <a href='https://drive.google.com/drive/folders/1iViiQamXqOBW5zQU4k_46A87j11BAuSc?usp=sharing' target='_blank' rel="noreferrer"><button>
                                 DOWNLOAD RESUME

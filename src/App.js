@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from '@material-ui/styles'
@@ -24,7 +25,7 @@ function App() {
             <Route path='/contact' component={Contact} />
           </Switch>
         </AnimatePresence>
-        
+        <Footer />
       </div>
       </ThemeProvider>
     </Router>

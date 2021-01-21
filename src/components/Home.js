@@ -41,62 +41,62 @@ const contactButtonTransition = {
 function Home() {
     return (
             <div className='home'>
+              <motion.div
+                exit='out'
+                animate='in'
+                initial='out'
+                variants={pageTransition}
+                transition={{duration: 1, stiffness: 1000}}
+              >
+                <h1>Hi! I am</h1>
+                <h1>CARL EDWARD</h1>
+              </motion.div>
+                
+              <div className='home-buttons'>
                 <motion.div
                   exit='out'
                   animate='in'
                   initial='out'
-                  variants={pageTransition}
-                  transition={{duration: 1, stiffness: 1000}}
+                  variants={projectButtonTransition}
+                  transition={{duration: 0.5}}
                 >
-                  <h1>Hi! I am</h1>
-                  <h1>CARL EDWARD</h1>
+                  <div className='hb-project'><Link to='/projects'>
+                    <Button 
+                        variant='outlined'
+                        color='secondary'
+                        size='large'
+                        startIcon={<FolderOpenIcon/>}
+                        style={{
+                          width: 200,
+                          padding: '20px 0'
+                        }}
+                    >
+                      Projects
+                    </Button>
+                  </Link></div>
                 </motion.div>
-                
-                  <div className='home-buttons'>
-                  <motion.div
-                    exit='out'
-                    animate='in'
-                    initial='out'
-                    variants={projectButtonTransition}
-                    transition={{duration: 0.5}}
-                  >
-                    <div className='hb-project'><Link to='/projects'>
-                      <Button 
-                          variant='outlined'
-                          color='secondary'
-                          size='large'
-                          startIcon={<FolderOpenIcon/>}
-                          style={{
-                            width: 200,
-                            padding: '20px 0'
-                          }}
-                      >
-                        Projects
-                      </Button>
-                    </Link></div>
-                  </motion.div>
-                  <motion.div
-                    exit='out'
-                    animate='in'
-                    initial='out'
-                    variants={contactButtonTransition}
-                    transition={{duration: 0.8}}
-                  >
-                    <div className='hb-contact'><Link to='/contact'>
-                      <Button 
-                          variant='contained'
-                          color='secondary'
-                          size='large'
-                          startIcon={<MailOutlineIcon/>}
-                          style={{
-                            width: 200,
-                            padding: '20px 0'
-                          }}
-                      > Contact Me
-                      </Button>
-                    </Link></div>
-                  </motion.div>
-                  </div>
+                <motion.div
+                  exit='out'
+                  animate='in'
+                  initial='out'
+                  variants={contactButtonTransition}
+                  transition={{duration: 0.8}}
+                >
+                  <div className='hb-contact'><Link to='/contact'>
+                    <Button 
+                        variant='contained'
+                        color='secondary'
+                        size='large'
+                        startIcon={<MailOutlineIcon/>}
+                        style={{
+                          width: 200,
+                          padding: '20px 0'
+                        }}
+                    > Contact Me
+                    </Button>
+                  </Link></div>
+                </motion.div>
+              </div>
             </div>
     )
 }
