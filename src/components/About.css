@@ -195,4 +195,8 @@
     .about-info {
         font-size: 1em;
     }
+    .coding-language img {
+        width: 70px;
+        height: 70px;
+    }
 }

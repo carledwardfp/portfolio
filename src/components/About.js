@@ -136,8 +136,8 @@ function About() {
                         >
                             <img src={process.env.PUBLIC_URL+'/images/python.png'} alt='python' />
                             <img src={process.env.PUBLIC_URL+'/images/cpp.png'} alt='cpp' />
-                            <img src={process.env.PUBLIC_URL+'/images/mysql.png'} alt='mysql' />
                             <img src={process.env.PUBLIC_URL+'/images/java.png'} alt='java' />
+                            <img src={process.env.PUBLIC_URL+'/images/mysql.png'} alt='mysql' />
                         </motion.div>
                         
                         <p>I have basic knowledge on <em>Back End Web Development</em> specifically Python and C++. I am currently learning Java and MySQL.</p>
