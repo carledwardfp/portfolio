@@ -92,7 +92,7 @@ function Projects() {
                         >
                             <img src={process.env.PUBLIC_URL+'/images/practice-project-githubcard.png'} alt='githubcard'/>
                             <div className='project-text'>
-                                <h1>Weather App</h1>
+                                <h1>Github Card</h1>
                                 <h2>&lt;Practice Project&gt;</h2>
                             </div>
                             <p>Made with:</p>
